@@ -5,8 +5,13 @@
  */
 class Students extends Controller
 {
-    public function __construct()
+    public function index()
     {
-        echo 'This is Students controller';
+        echo 'This is an index of Students controller';
+    }
+
+    public function show($id = null)
+    {
+        echo 'This is show of Students controller '. $id;
     }
 }
