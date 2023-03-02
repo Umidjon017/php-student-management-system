@@ -7,6 +7,10 @@ class Home extends Controller
 {
     public function index()
     {
-        echo 'This is Home controller';
+        $control = [
+            'name' => 'Umidjon',
+            'age' => 22,
+        ];
+        $this->view('home', ['control' => $control]);
     }
 }
